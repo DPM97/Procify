@@ -37,7 +37,7 @@ void setup() {
   transformWave = new FFT(input.bufferSize(), input.sampleRate());
 
 // get a random name out of all of the files
-  fileNames = listFileNames("/Users/DylanMaloy/Desktop/Code/Homework/music_player/songs/");
+  fileNames = listFileNames("PATH TO SONGS");
   int index = floor(random(fileNames.length));
   println("in main " + fileNames[index]);
   player = minim.loadFile("songs/" + fileNames[index]);
